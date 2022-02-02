@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/login_logo"
+        android:layout_width="143dp"
+        android:layout_height="143dp"
+        android:src="@drawable/login_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="64dp"
+        android:contentDescription="@string/todo" />
+    <ImageView
+        android:id="@+id/app_name_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/login_logo"
+        app:layout_constraintEnd_toEndOf="@id/login_logo"
+        app:layout_constraintTop_toBottomOf="@id/login_logo"
+        android:src="@drawable/ic_guardsmark"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/todo" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/email_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/app_name_bar"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            >
+            <ImageView
+                android:id="@+id/email_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_message"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:contentDescription="@string/todo" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etEmailLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/email_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="4dp"
+                app:boxBackgroundMode="none"
+                android:hint="@string/email"
+                app:hintTextColor="@color/black"
+                app:passwordToggleEnabled="false">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="start"
+                    android:textColor="@color/black"
+                    android:importantForAutofill="no"
+                    android:inputType="textEmailAddress" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/password_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email_card"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginEnd="64dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"
+            >
+            <ImageView
+                android:id="@+id/password_icon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:src="@drawable/ic_password"
+                android:scaleType="centerCrop"
+                android:padding="4dp"
+                android:contentDescription="@string/todo" />
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/etPasswordLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/password_icon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="4dp"
+                app:boxBackgroundMode="none"
+                android:hint="@string/password"
+                app:hintTextColor="@color/black"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/log_in"
+        app:icon="@drawable/ic_baseline_arrow_forward_24"
+        app:iconGravity="end"
+        android:backgroundTint="@color/skyBlue"
+        app:cornerRadius="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintStart_toStartOf="@id/password_card"
+        app:layout_constraintEnd_toEndOf="@id/password_card"
+        app:layout_constraintTop_toBottomOf="@id/password_card"
+        android:layout_marginTop="32dp"
+        android:textAllCaps="false"
+        android:elevation="4dp"
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/password_card"
+        app:layout_constraintEnd_toEndOf="@id/password_card"
+        app:layout_constraintTop_toBottomOf="@id/login_btn"
+        >
+    <TextView
+        android:id="@+id/not_register_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_registered_yet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        />
+    <TextView
+        android:id="@+id/register_tv"
+        android:layout_width="0dp"
+        android:gravity="start"
+        android:layout_height="wrap_content"
+        android:text="@string/register_here"
+        app:layout_constraintStart_toEndOf="@id/not_register_hint"
+        app:layout_constraintTop_toTopOf="@id/not_register_hint"
+        app:layout_constraintBottom_toBottomOf="@id/not_register_hint"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/skyBlue"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

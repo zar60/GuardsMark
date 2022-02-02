@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">GuardsMark</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="not_registered_yet">Not registered yet?</string>
+    <string name="register_here">Register here</string>
+    <string name="login_here">Login here</string>
+    <string name="already_registered">Already registered?</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_login2">LoginActivity2</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="profile">Profile</string>
+    <string name="dummy_user_name">John Doe</string>
+    <string name="dummy_user_prof">Software Engineer</string>
+    <string name="dummy_email">Email: john@gmail.com</string>
+    <string name="dummy_phone_no">Phone: +880 123 123 1234</string>
+    <string name="dummy_address">Address: 1368 Hayhrust lane, \nNew York</string>
+    <string name="dummy_passport_name">Passport.docx</string>
+    <string name="dummy_date">December 01.2021</string>
+    <string name="dummy_size">300kb</string>
+    <string name="dummy_nid_name">NID Softcopy.docx</string>
+    <string name="dummy_driving_name">Driving License.docx</string>
+    <string name="logout">Logout</string>
+    <string name="greetings">Good morning,</string>
+    <string name="your_location">Your Location</string>
+    <string name="find_the_nearest_hospitals">Find the nearest hospitals</string>
+    <string name="find_the_nearest_police_station">Find the nearest police station</string>
+    <string name="find_nearby_users">Find active users nearby</string>
+    <string name="seek_help">SEEK HELP</string>
+    <string name="register">Register</string>
+    <string name="active_users_nearby">Active users nearby</string>
+    <string name="sample_name">sample_name</string>
+    <string name="map_api_key">AIzaSyCD7yCJ4PkdQmLjvb6Jk-0Spvpj5qOBpsk</string>
+    <string name="map_box_api_key">pk.eyJ1IjoiZ3VhcnNtYXJrIiwiYSI6ImNreTJqamNnNjBsaGEyd3AzZnZod2N6dGYifQ.i7b2T1YTGc7PVpl4nirF1g</string>
+    <string name="re_enter_password">Re-enter Password</string>
+
+
+</resources>

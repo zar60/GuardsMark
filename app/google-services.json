@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "647958647189",
+    "project_id": "guardsmark-d6c3c",
+    "storage_bucket": "guardsmark-d6c3c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647958647189:android:9ad3a3932800a332b8269c",
+        "android_client_info": {
+          "package_name": "com.example.guardsmark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "647958647189-vois9a77m9pek4i5orglinom459ilugt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8nY0kKg-h1bqL9XqmWSbOGoiht0qTu1A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "647958647189-vois9a77m9pek4i5orglinom459ilugt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
